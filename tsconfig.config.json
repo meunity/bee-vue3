@@ -1,0 +1,15 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.node.json",
+  "include": [
+    "build/**/*.ts",
+    "build/**/*.d.ts",
+    "mock/**/*.ts",
+  ],
+  "compilerOptions": {
+    "composite": true,
+    "types": [
+      "node",
+      "vite/client"
+    ]
+  }
+}

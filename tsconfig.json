@@ -1,0 +1,30 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": [
+    "env.d.ts",
+    "components.d.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "types/**/*.d.ts",
+    "types/**/*.ts",
+    "auto-imports.d.ts",
+  ],
+  "exclude": [
+    "dist/"
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "typeRoots": ["./types"],
+  },
+  "references": [
+    {
+      "path": "./tsconfig.config.json"
+    }
+  ]
+}
